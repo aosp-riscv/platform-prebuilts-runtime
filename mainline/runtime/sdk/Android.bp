@@ -656,6 +656,16 @@ cc_prebuilt_library_shared {
                 "android/arm64/include/bionic/libc/kernel/uapi/asm-arm64",
             ],
         },
+        android_riscv64: {
+            srcs: ["android/riscv64/lib/libc.so"],
+            export_system_include_dirs: [
+                "android/riscv64/include/bionic/libc/include",
+                "android/riscv64/include/bionic/libc/kernel/uapi",
+                "android/riscv64/include/bionic/libc/kernel/android/scsi",
+                "android/riscv64/include/bionic/libc/kernel/android/uapi",
+                "android/riscv64/include/bionic/libc/kernel/uapi/asm-arm64",
+            ],
+        },
         android_x86_64: {
             srcs: ["android/x86_64/lib/libc.so"],
             export_system_include_dirs: [
